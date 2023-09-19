@@ -73,9 +73,9 @@ yum install python3-pip -y
 pip3 install flask
 yum install git -y
 cd /home/ec2-user
-wget -P templates https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/templates/index.html
-wget -P templates https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/templates/result.html
-wget https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/app.py
+wget -P templates https://raw.githubusercontent.com/ademirademir/001-roman-numerals-converter/main/templates/index.html   
+wget -P templates https://raw.githubusercontent.com/ademirademir/001-roman-numerals-converter/main/templates/result.html
+wget https://raw.githubusercontent.com/ademirademir/001-roman-numerals-converter/main/app.py
 python3 app.py
 ```
 - As for the student who use his/her own local terminal, they need to show the absulete path of userdata.sh file
@@ -83,7 +83,7 @@ python3 app.py
 - Now we can run the instance with CLI command. (Do not forget to create userdata.sh under "/home/ec2-user/" folder before run this command)
 
 ```bash
-aws ec2 run-instances --image-id $LATEST_AMI --count 1 --instance-type t2.micro --key-name ottoaws9 --security-groups roman_numbers_sec_grp --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roman_numbers}]' --user-data file:///Users/ODG/Desktop/git_dir/osvaldo-cw/porfolio_lesson_plan/week_6/CLI_solution/userdata.sh
+aws ec2 run-instances --image-id $LATEST_AMI --count 1 --instance-type t2.micro --key-name ottoaws9 --security-groups roman_numbers_sec_grp --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=roman_numbers}]' --user-data file:///Users/ODG/Desktop/git_dir/osvaldo-cw/porfolio_lesson_plan/week_6/CLI_solution/userdata.sh        
 
 or
 

@@ -6,7 +6,7 @@ yum install python3-pip -y
 pip3 install flask
 yum install git -y
 cd /home/ec2-user
-wget -P templates https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/templates/index.html
-wget -P templates https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/templates/result.html
-wget https://raw.githubusercontent.com/awsdevopsteam/roman-number-conventor/master/app.py
+wget -P templates https://raw.githubusercontent.com/ademirademir/001-roman-numerals-converter/main/templates/index.html   
+wget -P templates https://raw.githubusercontent.com/ademirademir/001-roman-numerals-converter/main/templates/result.html
+wget https://raw.githubusercontent.com/ademirademir/001-roman-numerals-converter/main/app.py
 python3 app.py
